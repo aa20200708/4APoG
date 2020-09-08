@@ -11,12 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.*;
 
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private Context context;
     private List<ClassFromJsonSchema> list;
 
-    public MovieAdapter(Context context, List<ClassFromJsonSchema> list) {
+    public Adapter(Context context, List<ClassFromJsonSchema> list) {
         this.context = context;
         this.list = list;
     }
@@ -52,4 +52,5 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             textUsername = itemView.findViewById(R.id.main_username);
         }
     }
+
 }

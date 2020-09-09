@@ -51,4 +51,12 @@
         app:layout_constraintStart_toStartOf="@+id/main_name"
         app:layout_constraintTop_toBottomOf="@+id/main_name" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/main_username"
+        app:layout_constraintStart_toStartOf="@+id/main_username"
+        app:layout_constraintTop_toBottomOf="@+id/main_username" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

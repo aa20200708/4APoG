@@ -50,6 +50,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             textId = itemView.findViewById(R.id.main_id);
             textName = itemView.findViewById(R.id.main_name);
             textUsername = itemView.findViewById(R.id.main_username);
+
         }
     }
 

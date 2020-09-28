@@ -40,7 +40,29 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        initListener();
+
     }
+
+    private void initListener() {
+
+        Adapter.setOnItemClickListener((view, position) -> {
+
+            Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+            Article article = articles.get(position);
+            Log.d(TAG, "onItemClick: GET ARTICLE DATA " + article.getSource().getName());
+            intent.putExtra(Article.class.getSimpleName(), article);
+
+            startActivity(intent);
+
+            Log.d(TAG, "onItemClick: FILL all info and send to detail activity");
+
+        });
+
+    }
+
+
 //       Button_f1.setOnClickListener(new View.OnClickListener() {
 //
 //        @Override

@@ -54,6 +54,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             textUsername = itemView.findViewById(R.id.main_username);
             textCompanyName = itemView.findViewById(R.id.company_name);
 
+
+
             itemView.setOnClickListener(new View.OnClickListener() {
 
                 @Override

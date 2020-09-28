@@ -16,15 +16,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layoutManager="LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="@+id/main_name"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="1dp" />
 
     <TextView
         android:id="@+id/main_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="id"
+        android:text=""
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/main_name"
         app:layout_constraintEnd_toEndOf="@+id/main_name"
@@ -36,7 +36,7 @@
         android:id="@+id/main_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="name"
+        android:text=""
         app:layout_constraintBottom_toTopOf="@+id/main_username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_id" />
@@ -45,18 +45,28 @@
         android:id="@+id/main_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="username"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/main_name"
         app:layout_constraintStart_toStartOf="@+id/main_name"
         app:layout_constraintTop_toBottomOf="@+id/main_name" />
 
     <TextView
+        android:id="@+id/company_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/main_username"
         app:layout_constraintStart_toStartOf="@+id/main_username"
         app:layout_constraintTop_toBottomOf="@+id/main_username" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/company_name"
+        app:layout_constraintStart_toStartOf="@+id/company_name"
+        app:layout_constraintTop_toBottomOf="@+id/company_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

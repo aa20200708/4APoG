@@ -4,14 +4,14 @@ package com.example.startapp007;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class ClassFromJsonSchema {
+public class MainInfo {
 
     @SerializedName("id")
     @Expose
     private Integer id;
     @SerializedName("name")
     @Expose
-    private String name;
+    public String name;
     @SerializedName("username")
     @Expose
     private String username;

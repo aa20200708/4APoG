@@ -8,6 +8,5 @@ import retrofit2.http.GET;
 public interface ApiInterface {
 
     @GET("users")
-    // getClassFromJsonSchemas - что-то тут надо переименовать
-    Call<List<ClassFromJsonSchema>> getClassFromJsonSchemas();
+    Call<List<MainInfo>> getMainInfo();
 }
